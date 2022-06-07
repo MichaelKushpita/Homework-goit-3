@@ -1,0 +1,422 @@
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --white-text-color:  #FFFFFF;
+    --main-font: "Roboto";
+    --secondary-background-color:#F5F4FA;
+}
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+}
+address {
+    font-style: normal;
+}
+a {
+    color: currentColor;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+body {
+    background-color:var(--white-text-color);
+    color: var(--primary-text-color);
+    font-family: "Roboto" , sans-serif;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+    
+}
+.page-header {
+    background-color: var(--white-text-color);
+}
+/* logo сайта */
+.logo {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--accent-color);
+    width: 145px;
+    height: 31px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    align-items: center;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+}
+.logostudio {
+    color: var(--primary-text-color);    
+}
+.logostudiofooter {
+   color: var(--white-text-color);
+}
+            /* nav list========== */
+.navlist {
+    display: flex;
+    margin-left: 93px;
+}
+.navlist li {
+    margin-right: 50px;
+}
+.navlist-studio, .navlist-portfolio, .navlist-contacts:last-child {
+    margin-right: 0px;
+}
+.navlist.link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.navlist-studio,.navlist-portfolio,.navlist-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.navlist-studio:hover,.navlist-portfolio:hover,.navlist-contacts:hover {
+    color: var(--accent-color);
+}
+.navlist a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing:0.02em;
+}
+.container-nav {
+     display: flex;
+     align-items: center;
+}
+/* header list mailto i tel */
+.headerlist-mailtolist,.headerlist-tel {
+    margin-left: 50px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.headerlist a:hover,
+.headerlist a:focus,
+.navlist a:hover,
+.navlist a:focus {
+    color: var(--accent-color);
+}
+
+.headerlist a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.headerlist {
+    display: flex;
+    margin-left: auto;
+   
+} 
+.container-hero {
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2F303A;
+    outline: 1px solid red;
+}
+                /* головний заголовок */
+.hero-title {
+    margin-bottom: 30px;
+    color: var(--white-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em; 
+    text-transform: uppercase;
+    outline: 1px solid crimson;
+}
+/* button */
+.button {
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.button:hover {
+    background: #188CE8;
+}
+/* ==============================фон hero and footer================== */
+.hero, .footer {
+    background-color: #2F303A;
+}
+/* section звголовків */
+.section-title {
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.section-text {
+    margin-bottom: 94px;
+   color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.section-title {
+    width: 270px;
+    height: 16px;
+}
+.section-text {
+    width: 270px;
+    height: 75px;
+    border: 1px solid black;
+}
+.section {
+    margin-top: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.item {
+    width: 370px;
+    height: 294px;
+    margin-left: 30px;
+
+}
+/* ===============================заголовок h2 секція=================== */
+.title {
+    margin-bottom: 50px;
+    padding-top: 0px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.comand-title-list {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.comand-text-items {
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.section-comand {
+    padding-top: 94px;
+    padding-bottom: 94;
+    margin-left: 30px;
+    background: var(--secondary-background-color);
+}
+.list-item {
+    width: 270px;
+    height: 368px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+.personal {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* footer list */
+.footerlist-address {
+    color: var(--white-text-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+}
+.footerlist-mailto,
+.footerlist-tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footerlist-mailto:hover,
+.footerlist-tel:hover {
+    color: var(--title-text-color);
+}
+.footerlist-mailto:focus,
+.footerlist-tel:focus {
+    color: var(--accent-color);
+}
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logostudiofooter {
+    margin-bottom: 20px;
+}
+.footerlist-mailto {
+    margin-bottom: 9px;
+}
+.footerlist-tel {
+    margin-bottom: 60px;
+}
+
+
+/* ===============================Портфолио============================== */
+
+.portfolio-buttonlist {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.portfolio-button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
+}
+.portfolio-button:hover, portfolio-button:focus {
+    color:var(--white-text-color) ;
+    background-color: var(--accent-color);
+}
+
+.portfolio-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.06em;
+}
+.portfolio-text {
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: left;
+    letter-spacing: 0.03em;
+}
+.work-list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.portfolio {
+    padding-top: 6px;
+    padding-bottom: 22px;
+    
+}
+.portfolio-list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gallery-list {
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+.portfolio-items {
+    margin-bottom: 50px;
+}
+.portfolio-items {
+    display: flex;
+}
+.portfolio-items li {    
+    margin-right: 8px;
+}
+
+
+/* Эффективные решения для вашего бизнеса адрес  и кнока */
+#FFFFFF
+
+/* Внимание к деталям и список с 4 заголовок h2 h3  имя команды * /#212121;
+
+/* Портфолио контакты */
+  #212121;
+
+
+/* info@devstudio.com */
+/* WebStudio */
+/*студия*/
+#2196F3
+/* +38 096 111 11 11 */
+/* Идейные соображения, а также начало повседневной работы по формированию позиции. */
+/* Marketing */
+color: #757575;
+
+/* info@example.com */
+/* +38 099 111 11 11 */
+color: rgba(255, 255, 255, 0.6);
+
+
+/* кнопка accent  */ #2196F3
+
+/* вторичний колір фона  background: #F5F4FA; */
