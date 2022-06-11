@@ -57,6 +57,9 @@ img {
     margin: 0 auto;
     
 }
+ul {
+    list-style: none;
+}
 .page-header {
     background-color: var(--white-text-color);
 }
@@ -173,7 +176,7 @@ img {
     height: 50px;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    border-radius: 0;
     color: var(--white-text-color);
     background-color: var(--accent-color);
     font-family: Roboto;
@@ -211,14 +214,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.section-title {
-    width: 270px;
-    height: 16px;
-}
-.section-text {
-    width: 270px;
-    height: 75px;
-}
 .section-list {
     display: flex;
     margin-left: 30px;
@@ -233,7 +228,11 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-/* ===============================заголовок h2 секція=================== */
+.work-about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* ================ ===============заголовок h2 секція=================== */
 .title {
     margin-bottom: 50px;
     padding-top: 0px;
@@ -336,7 +335,7 @@ img {
 /* ===============================Портфолио============================== */
 
 .portfolio-buttonlist {
-    font-family: Roboto;
+    font-family: 'Roboto'; 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -358,7 +357,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
-    border-radius: 4px;
+    border-radius: 0;
 }
 .portfolio-button:hover, portfolio-button:focus {
     color:var(--white-text-color) ;
@@ -391,7 +390,10 @@ img {
 }
 .portfolio-list {
     padding-top: 20px;
+    padding-right: 24px;
     padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
 }
 .portfolio-items {
     margin-bottom: 50px;
@@ -401,7 +403,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
 }
-.portfolio-items li {    
+.portfolio-items li:not(:last-child) {    
     margin-right: 8px;
 }
 /* -------------------------container================= */
