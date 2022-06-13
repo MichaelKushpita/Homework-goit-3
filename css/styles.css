@@ -227,7 +227,7 @@ ul {
 }
 
 .section-list > .item {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 4 - 90px);
     margin-left: 30px;
 }
 .section-list > .item:not(:last-child) {
@@ -270,7 +270,7 @@ ul {
 }
 .cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 
 }
 .item:not(:last-child) {
