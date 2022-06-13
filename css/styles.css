@@ -5,7 +5,7 @@
     --white-text-color:  #FFFFFF;
     --main-font: "Roboto";
     --secondary-background-color:#F5F4FA;
-}
+}  
 body {
     background-color: var(--white-text-color);
     color: var(--primary-text-color);
@@ -67,7 +67,6 @@ ul {
 .logo {
     color: var(--accent-color);
     width: 145px;
-    height: 31px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -79,14 +78,16 @@ ul {
     color: var(--primary-text-color);    
 }
 .logostudiofooter {
+   margin-bottom: 20px; 
    color: var(--white-text-color);
 }
             /* nav list========== */
 .navlist {
+    display: block;
     display: flex;
     margin-left: 93px;
     align-items: center;
-    padding: 32px 0;
+   
 }
 .navlist li {
     margin-right: 50px;
@@ -111,6 +112,7 @@ ul {
     color: var(--accent-color);
 }
 .navlist a {
+    padding: 32px 0;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -124,12 +126,14 @@ ul {
 /* header list mailto i tel */
 .headerlist-nav,.headerlist-nav {
     display: block;
-    margin-left: 50px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+.headerlist, .item {
+    margin-left: 50px;
 }
 .headerlist a:hover,
 .headerlist a:focus,
@@ -146,10 +150,11 @@ ul {
     letter-spacing: 0.02em;
 }
 .headerlist {
+    display: block;
     display: flex;
     margin-left: auto;
    
-} 
+}
 .container-hero {
     padding: 200px 0;
     display: flex;
@@ -176,7 +181,8 @@ ul {
     height: 50px;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 0;
+    border-radius: 4px;
+    border:0;
     color: var(--white-text-color);
     background-color: var(--accent-color);
     font-family: Roboto;
@@ -207,7 +213,7 @@ ul {
     text-transform: uppercase;
 }
 .section-text {
-    margin-bottom: 94px;
+    margin-bottom: 0;
     color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.f17;
@@ -216,21 +222,24 @@ ul {
 }
 .section-list {
     display: flex;
-    margin-left: 30px;
-    justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
-.section-list .item {
-    width: 300px;
+
+.section-list > .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+}
+.section-list > .item:not(:last-child) {
+    margin-left: 30px;
 }
 .section {
     margin-top: 0px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section work-about {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.work-about .section{
+    padding-top: 0;
 }
 /* ================ ===============заголовок h2 секція=================== */
 .title {
@@ -244,6 +253,7 @@ ul {
     letter-spacing: 0.03em;
 }
 .comand-title-list {
+    margin-bottom: 10px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -268,18 +278,18 @@ ul {
 }
 
 
-.section-comand {
-    padding-top: 94px;
-    padding-bottom: 94;
+.section-comand .section {
     background: var(--secondary-background-color);
 }
 .list-item {
-    width: calc((100% - 90px) / 4);
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+.comand-list .list-item {
+    flex-basis: calc((100% - 90px) / 4);
 }
 .list-item:not(:last-child) {
     margin-right: 30px;
@@ -291,6 +301,7 @@ ul {
 .comand-list {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 /* footer list */
@@ -324,11 +335,14 @@ ul {
 .logostudiofooter {
     margin-bottom: 20px;
 }
-.footerlist-mailto {
-    margin-bottom: 9px;
-}
 .footerlist-tel {
     margin-bottom: 60px;
+}
+.footerlist {
+    display: block;
+}
+.footerlist, .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 
@@ -347,6 +361,7 @@ ul {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    border:0;
 }
 .portfolio-button {
     font-family: Roboto;
@@ -357,7 +372,8 @@ ul {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
-    border-radius: 0;
+    border-radius: 4px;
+    border:0;
 }
 .portfolio-button:hover, portfolio-button:focus {
     color:var(--white-text-color) ;
@@ -365,6 +381,7 @@ ul {
 }
 
 .portfolio-title {
+    margin-bottom: 4px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -379,14 +396,9 @@ ul {
     text-align: left;
     letter-spacing: 0.03em;
 }
-.work-list {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .portfolio {
     padding-top: 6px;
-    padding-bottom: 22px;
-    
+    padding-bottom: 22px;    
 }
 .portfolio-list {
     padding-top: 20px;
