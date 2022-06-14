@@ -62,6 +62,7 @@ ul {
 }
 .page-header {
     background-color: var(--white-text-color);
+    border-bottom: 1px solid #ECECEC;
 }
 /* logo сайта */
 .logo {
@@ -78,12 +79,10 @@ ul {
     color: var(--primary-text-color);    
 }
 .logostudiofooter {
-   margin-bottom: 20px; 
    color: var(--white-text-color);
 }
             /* nav list========== */
 .navlist {
-    display: block;
     display: flex;
     margin-left: 93px;
     align-items: center;
@@ -101,7 +100,6 @@ ul {
     padding-bottom: 32px;
 }
 .navlist-header,.navlist-header,.navlist-header {
-    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -125,7 +123,6 @@ ul {
 }
 /* header list mailto i tel */
 .headerlist-nav,.headerlist-nav {
-    display: block;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -150,7 +147,6 @@ ul {
     letter-spacing: 0.02em;
 }
 .headerlist {
-    display: block;
     display: flex;
     margin-left: auto;
    
@@ -176,6 +172,7 @@ ul {
 }
 /* button */
 .button {
+    display: block;
     display: inline-block;
     min-width: 200px;
     height: 50px;
@@ -201,6 +198,11 @@ ul {
 .hero, .footer {
     background-color: #2F303A;
 }
+.section {
+    margin-top: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* section звголовків */
 .section-title {
     margin-bottom: 10px;
@@ -222,23 +224,26 @@ ul {
 }
 .section-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
+    text-align: center;
+
+    margin-left:-30px;
+}
+.section-list > .item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
 }
 
-.section-list > .item {
-    flex-basis: calc(100% / 4 - 90px);
-    margin-left: 30px;
-}
-.section-list > .item:not(:last-child) {
-    margin-left: 30px;
-}
-.section {
-    margin-top: 0px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.work-about .section{
+/* .section-list > .item { */
+    /* flex-basis: calc(100% / 4 - 90px); */
+    /* margin-left: 30px; */
+
+/* .section-list > .item:not(:last-child) { */
+    /* margin-left: 30px; */
+
+
+.work-about .section {
     padding-top: 0;
 }
 /* ================ ===============заголовок h2 секція=================== */
@@ -270,18 +275,31 @@ ul {
 }
 .cards {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    list-style: none;
 
+    margin-left: -30px;
 }
-.item:not(:last-child) {
-    margin-right: 30px;
+.cards .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
 }
+/* .cards .item { */
+    /* flex-basis: calc((100% - 90px) / 3); */
+
+/* .item:not(:last-child) { */
+    /* margin-right: 30px; */
+
 
 
 .section-comand .section {
     background: var(--secondary-background-color);
 }
+.section-comand {
+    background-color: var(--secondary-background-color);
+}
 .list-item {
+    display: block;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -306,6 +324,7 @@ ul {
 
 /* footer list */
 .footerlist-address {
+    display: block;
     color: var(--white-text-color);
     font-style: normal;
     font-size: 14px;
@@ -341,7 +360,7 @@ ul {
 .footerlist {
     display: block;
 }
-.footerlist, .item:not(:last-child) {
+.footerlist .item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -349,6 +368,7 @@ ul {
 /* ===============================Портфолио============================== */
 
 .portfolio-buttonlist {
+    display: block;
     font-family: 'Roboto'; 
     font-weight: 500;
     font-size: 16px;
@@ -363,7 +383,14 @@ ul {
     border-radius: 4px;
     border:0;
 }
+.portfolio-buttonlist {
+    padding: 6px 22px;
+}
 .portfolio-button {
+    padding: 6px 22px;
+}
+.portfolio-button {
+    display: block;
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
@@ -401,11 +428,10 @@ ul {
     padding-bottom: 22px;    
 }
 .portfolio-list {
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: 0;
+
 }
 .portfolio-items {
     margin-bottom: 50px;
