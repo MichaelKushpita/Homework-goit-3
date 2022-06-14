@@ -219,7 +219,7 @@ ul {
     margin-bottom: 0;
     color: var(--title-text-color);
     font-size: 14px;
-    line-height: 1.17;
+    line-height: 1.7;
     text-align: left;
     letter-spacing: 0.03em;
 }
@@ -338,6 +338,9 @@ ul {
 }
 .logostudiofooter, .footer .logo {
     margin-bottom: 20px;
+}
+.logostudiofooter .logo {
+    display: block;
 }
 .footerlist-tel {
     margin-bottom: 60px;
