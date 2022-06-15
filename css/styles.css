@@ -67,12 +67,10 @@ ul {
 /* logo сайта */
 .logo {
     color: var(--accent-color);
-    width: 145px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    align-items: center;
     letter-spacing: 0.03em;
 }
 .logostudio {
@@ -151,7 +149,7 @@ ul {
     margin-left: auto;   
 }
 .headerlist .item {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .container-hero {
     padding: 200px 0;
@@ -211,7 +209,6 @@ ul {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: left;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -220,14 +217,12 @@ ul {
     color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.7;
-    text-align: left;
     letter-spacing: 0.03em;
 }
 .section-list {
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
-    text-align: center;
 
     margin-left:-30px;
 }
@@ -341,6 +336,9 @@ ul {
 }
 .logostudiofooter .logo {
     display: block;
+}
+.footer .logo {
+    display: inline-block;
 }
 .footerlist-tel {
     margin-bottom: 60px;
